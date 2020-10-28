@@ -1,7 +1,7 @@
-###Example
+#### Example
 
 ```
-const mq = require('@rexiduz/mq')
+const mq = require('mq')
 
 const rule = mq.getter("_EXPRESSIONS._MOBILE_LANDSCAPE")
 const mediaRule = mq.createRule(rule)
