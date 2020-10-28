@@ -1,0 +1,20 @@
+{
+  "name": "mq",
+  "version": "0.0.1-beta",
+  "description": "Helper functions for create media query rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "@media",
+    "media-query",
+    "media-query",
+    "patterns"
+  ],
+  "author": "rexiduz",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
