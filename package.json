@@ -1,8 +1,16 @@
 {
+  "author": "rexiduz",
   "name": "mq",
   "version": "0.0.1-beta",
   "description": "Helper functions for create media query rules",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rexiduz/mq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beforesecond/hello-nextzy/issuess"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,9 +20,8 @@
     "media-query",
     "patterns"
   ],
-  "author": "rexiduz",
-  "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.20"
-  }
+  },
+  "license": "MIT"
 }

@@ -1,3 +1,5 @@
+Helper functions for create media query rules
+
 #### Example
 
 ```
