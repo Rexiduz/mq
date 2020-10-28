@@ -9,7 +9,7 @@
     "url": "https://github.com/Rexiduz/mq.git"
   },
   "bugs": {
-    "url": "https://github.com/beforesecond/hello-nextzy/issuess"
+    "url": "https://github.com/Rexiduz/mq/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +21,8 @@
     "patterns"
   ],
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash.get": "^4.4.2",
+    "lodash.reduce": "^4.6.0"
   },
   "license": "MIT"
 }
