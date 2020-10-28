@@ -1,10 +1,10 @@
-const reduce = require('lodash/reduce')
+const reduce = require('lodash.reduce')
 
-function typeOf(obj) {
+const typeOf = function (obj) {
   return {}.toString.call(obj).split(' ')[1].slice(0, -1).toLowerCase()
 }
 
-function recursive(obj, callback = (value) => value) {
+const recursive = function (obj, callback = (value) => value) {
   return reduce(
     obj,
     (result, value, key) => {
@@ -31,7 +31,5 @@ function recursive(obj, callback = (value) => value) {
   )
 }
 
-module.exports = {
-  recursive,
-  typeOf
-}
+exports.recursive = recursive
+exports.typeOf = typeOf
