@@ -1,6 +1,6 @@
 {
   "author": "rexiduz",
-  "name": "mq",
+  "name": "rexiduz-mq",
   "version": "0.0.1-beta",
   "description": "Helper functions for create media query rules",
   "main": "index.js",
