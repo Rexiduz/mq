@@ -1,9 +1,3 @@
-const mq = require('.')
-const CONSTANTS = require('.').CONSTANTS
+const mq = require('./index').mq
 
-console.log('mq', mq)
-console.log(
-  'test rule :',
-  mq.createRule(mq.getter('_EXPRESSIONS._MOBILE_LANDSCAPE'))
-)
-console.log({ CONSTANTS })
+console.log('mq', mq('md'))
