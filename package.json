@@ -1,8 +1,8 @@
 {
   "author": "rexiduz",
   "name": "rexiduz-mq",
-  "version": "0.0.1-beta.a",
-  "description": "Helper functions for create media query rules",
+  "version": "1.0.0",
+  "description": "Detect screen size and write media query",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
     "@media",
     "media-query",
     "media-query",
-    "patterns"
+    "patterns",
+    "react",
+    "react-responsive"
   ],
   "dependencies": {
     "react": "^17.0.2",
