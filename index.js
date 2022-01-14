@@ -62,7 +62,17 @@ const useBreakpoint = () => {
   screens.tablet = ['sm', 'md'].includes(last(screenSizes))
   screens.desktop = !!screens.lg
 
-  return { screens, current: { size: { [breakpoint]: true }, breakpoint } }
+  const isLowerThan = (bp) => {
+    const indexOfBp = matchesStrings.indexOf(bp)
+    const overflowBp = screenSizes.filter((_, index) => indexOfBp < index)
+    return !overflowBp.length
+  }
+
+  return {
+    screens,
+    current: { size: { [breakpoint]: true }, breakpoint },
+    isLowerThan
+  }
 }
 
 module.exports.getWidth = getWidth
