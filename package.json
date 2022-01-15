@@ -1,7 +1,7 @@
 {
   "author": "rexiduz",
   "name": "rexiduz-mq",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Detect screen size and write media query",
   "main": "index.js",
   "repository": {
