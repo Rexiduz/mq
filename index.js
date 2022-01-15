@@ -11,20 +11,26 @@ const breakpoints = {
   xxxl: 1920
 }
 
-const getWidth = (breakpoint = 'md') => {
-  return breakpoints[breakpoint]
-}
-
 const mq = (size, symbol = true) => {
   const words = []
-  const breakpoint = getWidth(size)
-  const screenSize = breakpoint ? `${breakpoint}px` : size
 
   if (symbol) {
     words.push('@media')
   }
 
-  words.push(`(min-width: ${screenSize})`)
+  if (Array.isArray(size)) {
+    const [start, end] = size
+    const min = getWidth(start)
+    const max = getWidth(end)
+
+    words.push(`(min-width: ${min})`)
+    words.push('and')
+    words.push(`(max-width: ${max})`)
+  } else {
+    const min = getWidth(size)
+
+    words.push(`(min-width: ${min})`)
+  }
 
   return words.join(' ')
 }
@@ -75,7 +81,6 @@ const useBreakpoint = () => {
   }
 }
 
-module.exports.getWidth = getWidth
 module.exports.mq = mq
 module.exports.vh = vh
 module.exports.useBreakpoint = useBreakpoint
