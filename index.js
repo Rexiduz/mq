@@ -11,6 +11,11 @@ const breakpoints = {
   xxxl: 1920
 }
 
+const getWidth = (breakpoint = 'md') => {
+  const width = breakpoints[breakpoint]
+  return width ? `${width}px` : breakpoint
+}
+
 const mq = (size, symbol = true) => {
   const words = []
 
@@ -81,6 +86,7 @@ const useBreakpoint = () => {
   }
 }
 
+module.exports.getWidth = getWidth
 module.exports.mq = mq
 module.exports.vh = vh
 module.exports.useBreakpoint = useBreakpoint
